@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Game</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #14121f; color: #f1eefb;
+                 font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    body { display: flex; flex-direction: column; align-items: center; }
+    header { width: 100%; max-width: 900px; padding: 12px 20px; display: flex;
+             justify-content: space-between; align-items: center; }
+    header a { color: #ffb454; text-decoration: none; }
+    header a:hover { text-decoration: underline; }
+    #game { background: #000; max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>My Game</strong>
+    <a href="../../">All games</a>
+  </header>
+
+  <!-- OPTION A: your game draws on a canvas. Set width/height to match your game. -->
+  <canvas id="game" width="800" height="500"></canvas>
+
+  <!-- OPTION B: your game is already a full page (Unity, Godot, etc).
+       Delete the canvas and script below, then use an iframe pointing at the export:
+  <iframe src="build/index.html" width="800" height="500" style="border:0;max-width:100%" allowfullscreen></iframe>
+  -->
+
+  <!-- Use relative paths (no leading slash) so it works on GitHub Pages. -->
+  <script src="game.js"></script>
+</body>
+</html>
